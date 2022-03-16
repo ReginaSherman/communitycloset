@@ -9,8 +9,6 @@ The idea behind this app sort of marries Poshmark and Pinterest - users can uplo
 uploaded by other users in their network, and request to borrow a piece. Ideally, it will show if a piece is available, if it's being borrowed, and who
 is currently borrowing it. 
 
-I would like to implement social auth using NextAuth.js to allow users to sign up with an existing social account, because I know for myself, keeping track of different usernames and passwords is tedious and signing up for new accounts can be annoying. 
-
 ## Technologies Used
 
 - React/Next.js
