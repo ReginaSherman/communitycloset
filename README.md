@@ -1,4 +1,5 @@
 # Capstone Project 
+## divvy (FKA CommunityCloset)
 
 ## Summary
 
