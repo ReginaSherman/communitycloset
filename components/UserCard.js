@@ -5,7 +5,7 @@ const UserCard = ({ user }) => {
     return (
         <div key={user.id}>
             <Link href={`/user-detail/${user.id}`} passHref>
-                <Box align='center' padding='4' bg='gray.100' w='200px' h='xxs' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                <Box align='center' padding='6' bg='whiteAlpha.700' w='200px' h='200px' borderWidth='1px' borderRadius='lg' overflow='hidden'>
                     <Img
                         borderRadius='full'
                         boxSize='100px'

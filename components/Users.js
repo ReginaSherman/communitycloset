@@ -14,9 +14,9 @@ const Users = () => {
     }
     return (
         <>
-            <Container centerContent>
+            <Container centerContent fontWeight='bold'>
                 <Flex mt={40}>
-                    <SimpleGrid columns={4} spacing='10px' width='1000px'>
+                    <SimpleGrid columns={4} spacing='10px' width='900px'>
                         {userQuery.data.map(user => {
                             return (
                                 <>

@@ -214,24 +214,24 @@ export const Nav = ({ title }) => {
                             Home
                         </Button>
                     </NextLink>
-                    <NextLink href='/profile' passHref>
+                    <NextLink href='/community' passHref>
                         <Button
                             as='a'
                             variant='ghost'
                             aria-label='Profile'
                             my={5}
                             w='100%'>
-                            Profile
+                            Community
                         </Button>
                     </NextLink>
-                    <NextLink href='/community' passHref>
+                    <NextLink href='/profile' passHref>
                         <Button
                             as='a'
                             variant='ghost'
                             aria-label='Community'
                             my={5}
                             w='100%'>
-                            Community
+                            Add an Item
                         </Button>
                     </NextLink>
                 </Flex>
@@ -241,5 +241,5 @@ export const Nav = ({ title }) => {
 }
 
 Nav.defaultProps = {
-    title: 'D  I  V  V  Y',
+    title: 'd i v v y',
 }

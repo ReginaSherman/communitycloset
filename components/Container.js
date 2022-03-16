@@ -11,6 +11,8 @@ export const Container = (props) => {
         <>
             <Nav />
             <Flex
+                
+                fontFamily='Abel'
                 direction="column"
                 alignItems="center"
                 justifyContent="flex-start"
