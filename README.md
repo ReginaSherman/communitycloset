@@ -18,6 +18,7 @@ is currently borrowing it.
 - AWS S3/NextS3Upload
 - Prisma
 - PostgreSQL
+- Vercel/Railway for deploying
 
 
 ##Screenshots 
