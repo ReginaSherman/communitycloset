@@ -21,11 +21,7 @@ is currently borrowing it.
 - Vercel/Railway for deploying
 
 
-##Screenshots 
+## Screenshots 
 
 ![Home](https://github.com/ReginaSherman/communitycloset/blob/ae12e5422f703cccd832a4b46a1fce5586a9ac2d/planning/1.png "One")
-![Two](https://github.com/ReginaSherman/communitycloset/blob/ae12e5422f703cccd832a4b46a1fce5586a9ac2d/planning/2.png "Two")
-![Three](https://github.com/ReginaSherman/communitycloset/blob/ae12e5422f703cccd832a4b46a1fce5586a9ac2d/planning/3.png "Three")
 ![Four](https://github.com/ReginaSherman/communitycloset/blob/ae12e5422f703cccd832a4b46a1fce5586a9ac2d/planning/4.png "Four")
-![Five](https://github.com/ReginaSherman/communitycloset/blob/ae12e5422f703cccd832a4b46a1fce5586a9ac2d/planning/5.png "Five")
-
