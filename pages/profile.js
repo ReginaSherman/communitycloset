@@ -8,30 +8,30 @@ import NewItemForm from '../components/NewItemForm'
 import ClothingItemCard from '../components/ClothingItemCard'
 
 export default function Profile() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const router = useRouter()
-  const query = useQuery('user', async () => {
-    const id = router.query.id
-    const res = await fetch(`http://localhost:3000/api/user/${id}`)
-    const data = await res.json()
-    const session = await getSession()
-    console.log(session.user)
-    // console.log('data', data)
-    // return data.user
-  })
-  console.log(query)
-  if (query.isLoading) {
-    return <Spinner />
-  }
+  // const { isOpen, onOpen, onClose } = useDisclosure()
+  // const router = useRouter()
+  // const query = useQuery('user', async () => {
+  //   const id = router.query.id
+  //   const res = await fetch(`http://localhost:3000/api/user/${id}`)
+  //   const data = await res.json()
+  //   const session = await getSession()
+  //   console.log(session.user)
+  //   // console.log('data', data)
+  //   // return data.user
+  // })
+  // console.log(query)
+  // if (query.isLoading) {
+  //   return <Spinner />
+  // }
 
   return (
     <>
-      <Container height="100vh" padding='150'>
-        <Button onClick={onOpen}>Add an Item</Button>
+      <Container height="100vh" padding='100'>
+        {/* <Button onClick={onOpen}>Add an Item</Button>
         <Modal isOpen={isOpen} onClose={onClose}>
-          <ModalOverlay />
+          <ModalOverlay /> */}
           <NewItemForm />
-        </Modal>
+        {/* </Modal> */}
         {/* <Flex >
           <SimpleGrid columns={[1, null, 3]} spacing='40px'>
             {query.data.clothingItems.map(item => {

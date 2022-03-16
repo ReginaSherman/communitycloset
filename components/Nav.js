@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Flex, Button, IconButton, Heading, Box, HStack, Container, Center, Menu, MenuButton, MenuItem, MenuList, Spacer } from '@chakra-ui/react'
+import { useDisclosure, Flex, Button, IconButton, Heading, Box, HStack, Container, Center, Menu, MenuButton, MenuItem, MenuList, Spacer } from '@chakra-ui/react'
 import { useState } from 'react'
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import { signIn, signOut, useSession } from 'next-auth/react'
@@ -11,16 +11,18 @@ import "@fontsource/abel"
 export const Nav = ({ title }) => {
     const [display, changeDisplay] = useState('none')
     const { data: session, status } = useSession()
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
     return (
         <Flex>
             <Flex display={['flex', 'flex', 'none', 'none']}>
                 <Box>
-                <IconButton
-                    aria-label='Open Menu'
-                    size='lg'
-                    icon={<HamburgerIcon />}
-                    onClick={() => changeDisplay('flex')}
-                />
+                    <IconButton
+                        aria-label='Open Menu'
+                        size='lg'
+                        icon={<HamburgerIcon />}
+                        onClick={() => changeDisplay('flex')}
+                    />
                     <NextLink href='/' passHref>
                         <Heading
                             fontSize="5vw"
@@ -29,7 +31,7 @@ export const Nav = ({ title }) => {
                             bgClip="text"
                             pr={7}
                             justifyContent='center'
-                         
+
                             as='button'
                         >
                             {title}
@@ -71,7 +73,7 @@ export const Nav = ({ title }) => {
                             <Button
                                 fontSize="2vw"
                                 fontFamily='Abel'
-                                bg='blackAlpha.300'
+                                bg='blackAlpha.500'
                                 bgClip="text"
                                 my={5}
                                 pl={5}
@@ -79,6 +81,7 @@ export const Nav = ({ title }) => {
                                 justifyContent='center'
                                 pos='relative'
                                 as='button'
+                                variant='unstyled'
                             >
                                 HOME
                             </Button>
@@ -90,7 +93,7 @@ export const Nav = ({ title }) => {
                             <Button
                                 fontSize="2vw"
                                 fontFamily='Abel'
-                                bg='blackAlpha.300'
+                                bg='blackAlpha.500'
                                 bgClip="text"
                                 my={5}
                                 pl={5}
@@ -118,7 +121,7 @@ export const Nav = ({ title }) => {
                                         <Button
                                             fontSize="2vw"
                                             fontFamily='Abel'
-                                            bg='blackAlpha.300'
+                                            bg='blackAlpha.500'
                                             bgClip="text"
                                             my={5}
                                             justifyContent='center'
@@ -139,14 +142,14 @@ export const Nav = ({ title }) => {
                                         <Button
                                             fontSize="2vw"
                                             fontFamily='Abel'
-                                            bg='blackAlpha.300'
+                                            bg='blackAlpha.500'
                                             bgClip="text"
                                             my={5}
                                             justifyContent='center'
                                             pos='relative'
                                             as='button'
                                         >
-                                            PROFILE
+                                            ADD AN ITEM
                                         </Button>
                                     </NextLink>
                                 </Box>

@@ -1,13 +1,6 @@
 import React, { useState } from 'react'
 import { useMutation } from 'react-query'
-import { FormControl, FormLabel, Input, Select } from '@chakra-ui/react'
-import {
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalCloseButton,
-    Button,
-} from '@chakra-ui/react'
+import { FormControl, FormLabel, Input, Select, Flex, Button } from '@chakra-ui/react'
 import axios from 'axios'
 import { useS3Upload } from 'next-s3-upload';
 
@@ -48,44 +41,39 @@ const NewItemForm = () => {
     }
 
     return (
-        <div>
-            <ModalContent padding='5'>
-                <ModalHeader>Add an Item</ModalHeader>
-                <ModalCloseButton />
-                <form onSubmit={handleSubmit}>
+        <Flex bg='gray.200' width='700px' margin='5' justifyContent='center' borderRadius='lg'>
+                <form onSubmit={handleSubmit} >
                     <FormControl isRequired>
-                        <FormLabel htmlFor='name'>Title</FormLabel>
+                        <FormLabel mt={5} htmlFor='name'>Title</FormLabel>
                         <Input
                             id='name'
                             type='text'
                             placeholder='Title'
+                            w='500px'
+                            bg='white'
                             value={formState.name}
                             onChange={handleChange} />
                     </FormControl>
-                    {/* <FormLabel htmlFor='image'>Image</FormLabel>
-                        <Input
-                            id='image'
-                            variant='unstyled'
-                            type='file'
-                            onChange={(e) => setImage(e.target.files[0])} /> */}
                     <FormLabel htmlFor='image'>Image</FormLabel>
                     <Button onClick={openFileDialog}>Upload File</Button>
                     <FileInput
                         id='image'
                         type='text'
-                        // value={formState.image}
                         onChange={handleFileChange} />
                     <FormControl isRequired>
                         <FormLabel htmlFor='description'>Description</FormLabel>
                         <Input
                             id='description'
                             type='text'
+                            bg='white'
+                            // width='500px'
                             placeholder='Description'
                             value={formState.description}
                             onChange={handleChange} />
                         <FormLabel htmlFor='category'>Category</FormLabel>
                         <Select
                             id='category'
+                            bg='white'
                             placeholder='Category'
                             value={formState.category}
                             onChange={handleChange}>
@@ -101,6 +89,7 @@ const NewItemForm = () => {
                         <Select
                             id='size'
                             placeholder='Size'
+                            bg='white'
                             value={formState.size}
                             onChange={handleChange}>
                             <option>XXS</option>
@@ -112,15 +101,11 @@ const NewItemForm = () => {
                             <option>XXL</option>
                         </Select>
                     </FormControl>
-                    <ModalFooter>
-                        <Button type='submit' colorScheme='blue' mr={3}>
+                        <Button type='submit' colorScheme='gray' mr={3} mt={5} mb={5}>
                             Submit
                         </Button>
-
-                    </ModalFooter>
                 </form>
-            </ModalContent>
-        </div>
+        </Flex>
     )
 }
 
