@@ -12,10 +12,11 @@ is currently borrowing it.
 
 ## Technologies Used
 
-- React/Next.js
+- Next.js
 - Chakra UI
-- NextAuth.js
-- AWS S3/NextS3Upload
+- NextAuth
+- AWS S3
+- NextS3Upload
 - Prisma
 - PostgreSQL
 - Vercel/Railway for deploying
