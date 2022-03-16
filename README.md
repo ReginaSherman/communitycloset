@@ -20,6 +20,22 @@ is currently borrowing it.
 - PostgreSQL
 - Vercel/Railway for deploying
 
+## Wireframes 
+
+![Home](https://github.com/ReginaSherman/communitycloset/blob/341c53566808f1be9b6c6ed2b6c0e5d1d6a7f6f3/planning/CommunityCloset%20wireframe%20(4).png "One")
+![Four](https://github.com/ReginaSherman/communitycloset/blob/341c53566808f1be9b6c6ed2b6c0e5d1d6a7f6f3/planning/CommunityCloset%20wireframe%20(5).png "Four")
+
+## User Stories
+
+### MVP
+ - As a user, I want to be able to upload photos of my clothing. 
+ - As a user, I want to login with an existing social account.
+ - As a user, I want to view clothing uploaded by other users.
+
+### Stretch Goals
+ - As a user, I want to interact with other users.
+ - As a user, I want to send an email to request to borrow a piece of clothing.
+ - As a user, I want to see if a piece is available to borrow.
 
 ## Screenshots 
 
