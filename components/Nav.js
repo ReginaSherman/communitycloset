@@ -95,6 +95,7 @@ export const Nav = ({ title }) => {
                                 fontFamily='Abel'
                                 bg='blackAlpha.500'
                                 bgClip="text"
+                                variant='unstyled'
                                 my={5}
                                 pl={5}
                                 pr={5}
@@ -124,6 +125,7 @@ export const Nav = ({ title }) => {
                                             bg='blackAlpha.500'
                                             bgClip="text"
                                             my={5}
+                                            variant='unstyled'
                                             justifyContent='center'
                                             pos='relative'
                                             as='button'
@@ -144,6 +146,7 @@ export const Nav = ({ title }) => {
                                             fontFamily='Abel'
                                             bg='blackAlpha.500'
                                             bgClip="text"
+                                            variant='unstyled'
                                             my={5}
                                             justifyContent='center'
                                             pos='relative'

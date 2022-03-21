@@ -13,6 +13,7 @@ export default NextAuth({
             clientSecret: process.env.GOOGLE_SECRET,
         }),
     ],
+    secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
         async session({ session, token, user, clothingItems }) {
           session.user = {
