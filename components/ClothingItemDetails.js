@@ -8,7 +8,7 @@ const ClothingItemDetail = () => {
     const router = useRouter()
     const { id } = router.query
     const query = useQuery('item', async () => {
-        const res = await fetch(`http://localhost:3000/api/clothing-item/${id}`)
+        const res = await fetch(`/api/clothing-item/${id}`)
         console.log('res', res)
         const data = await res.json()
         console.log('data', data)

@@ -10,7 +10,7 @@ const UserDetail = () => {
     const router = useRouter()
     const query = useQuery('user', async () => {
         const id = router.query.id
-        const res = await fetch(`http://localhost:3000/api/user/${id}`)
+        const res = await fetch(`/api/user/${id}`)
         const data = await res.json()
         console.log('data', data)
         return data.user
